@@ -4,14 +4,14 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-            'primary-color':'',
+            'primary-color':'#B4F461',
             'secondary-color': ''
           },
             backgroundImage:{
             'discuss-bg': "url('')",
           },
             fontFamily: {
-            'manrope': "Manrope, sans-serif",
+            'lexend': "Lexend, sans-serif",
           }
       },
     },
