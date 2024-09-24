@@ -55,3 +55,22 @@ donateButton3.addEventListener("click", function (event) {
   console.log(totalAmount3);
 });
 
+const historyTab = document.getElementById("history-tab");
+const donationTab = document.getElementById("donation-tab");
+historyTab.addEventListener("click", function () {
+  historyTab.classList.add(
+    "bg-primary-color",
+    "hover:bg-primary-color",
+    "font-bold"
+  );
+  historyTab.classList.remove("bg-primary-color");
+  donationTab.classList.remove("bg-primary-color", "font-bold");
+  historyTab.classList.add("bg-primary-color");
+
+  document.getElementById("donation-form").classList.add("hidden");
+});
+
+const blogButton = document.getElementById("blog-btn");
+blogButton.addEventListener("click", function () {
+  window.location.href = "./home.html";
+});
