@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/9879608144.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#B4F461',
+                        'secondary-color': ''
+                    },
+                    backgroundImage: {
+                        'discuss-bg': "url('')",
+                    },
+                    fontFamily: {
+                        'lexend': "Lexend , sans-serif "
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-lexend">
+    <section class="bg-[#F9F7F3] pt-4 md:pb-10 pb-5">
+        <div class="container mx-auto">
+            <div class="navbar bg-base-100 bg-[#F9F7F3]">
+                <div class="navbar-start ">
+                    <button class="btn bg-primary-color hover:bg-primary-color">Home</button>
+                </div>
+                <div class="navbar-center hidden md:block lg:flex lg:items-center">
+                    <img class="md:w-3/12" src="./assets/logo.png" alt="">
+                    <a class="ml-4 md:text-lg w-full font-bold">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end">
+                    <img src="./assets/coin.png" alt="">
+                    <h1 class="ml-4 text-gray-600 font-semibold">5500 BDT</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto mt-20">
+        <h1 class="font-bold text-4xl mb-10">Important FAQ</h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p class="text-xl">The Document Object Model (DOM) is a programming interface for web documents, representing the page's structure as a tree of objects. It allows JavaScript to interact with, modify, or manipulate the content, structure, and style of a webpage dynamically. In essence, the DOM connects web pages to scripting languages, enabling real-time updates and interaction.</p>
+              </div>
+            </div>
+            <!-- second -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-2xl font-medium">How do you select oan element from the DOM?</div>
+              <div class="collapse-content">
+                <p class="text-xl">To select an element from the DOM, you can use methods like document.getElementById('id') for selecting by ID or document.querySelector('.class') for selecting using CSS selectors. These methods allow you to pinpoint specific elements for manipulation. By connecting these elements to JavaScript, you gain control over their content and styling.</p>
+              </div>
+            </div>
+            <!-- third -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p class="text-xl">Event delegation in the DOM is a technique where a single event listener is added to a parent element to manage events on its child elements. This is useful because it minimizes the number of event listeners, improving performance and making dynamic content easier to manage. By leveraging event bubbling, it ensures that even newly added elements respond to events.</p>
+              </div>
+            </div>
+            <!-- forth -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-xl">You can manipulate an element's attributes using methods like setAttribute and removeAttribute, allowing you to modify things like src or href. For styles, the style property lets you change CSS directly, like updating color or background. Both attributes and styles can be dynamically adjusted to create interactive web experiences.</p>
+                </div>
+              </div>
+              <!-- fifth -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl font-medium">How do you add a new class to an element in the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-xl">You can add a new class to an element using the classList.add() method, which allows you to apply a predefined style from your CSS. This method is dynamic and can be used to toggle or enhance visual changes on user interaction.</p>
+                </div>
+              </div>
+              <!-- sixth -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl font-medium">How can you remove an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-xl">To remove an element from the DOM, you can use the remove() method directly on the target element. This method ensures the selected element is deleted from the document without leaving any trace in the structure.</p>
+                </div>
+              </div>
+          </div>
+    </section>
+</body>
+</html>
