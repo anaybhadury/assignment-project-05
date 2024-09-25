@@ -4,7 +4,7 @@ donateButton.addEventListener("click", function (event) {
   event.preventDefault();
   const inputAddMoney = getInputNumber('donation-input-btn');
   if(inputAddMoney <= 0 || isNaN(inputAddMoney)){
-    alert('Invalid Input! please try again');
+    alert('Invalid Donation Amount');
     return;
   }
   const balance = parseFloat(document.getElementById("amount-1").innerText);
@@ -23,7 +23,7 @@ donateButton2.addEventListener("click", function (event) {
   event.preventDefault();
   const inputAddMoney2 = getInputNumber('donation-input-btn2');
   if(inputAddMoney2 <= 0 || isNaN(inputAddMoney2)){
-    alert('Invalid Input! please try again');
+    alert('Invalid Donation Amount');
     return;
   }
   const balance2 = parseFloat(document.getElementById("amount-2").innerText);
@@ -46,7 +46,7 @@ donateButton3.addEventListener("click", function (event) {
   event.preventDefault();
   const inputAddMoney3 = getInputNumber('donation-input-btn3');
   if(inputAddMoney3 <= 0 || isNaN(inputAddMoney3)){
-    alert('Invalid Input! please try again');
+    alert('Invalid Donation Amount');
     return;
   }
   const balance3 = parseFloat(document.getElementById("amount-3").innerText);
